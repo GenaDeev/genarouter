@@ -39,9 +39,19 @@ const loadPage = async (route) => {
 };
 
 const setMetadata = (metadata) => {
-    metadata.title && (document.title = metadata.title);
-    metadata.description && document.querySelector('meta[name="description"]').setAttribute('content', metadata.description);
+    if (metadata) {
+        if (metadata.title) {
+            document.title = metadata.title;
+        }
+        if (metadata.description) {
+            const metaDescription = document.querySelector('meta[name="description"]');
+            if (metaDescription) {
+                metaDescription.setAttribute('content', metadata.description);
+            }
+        }
+    }
 };
+
 
 addEventListener('DOMContentLoaded', () => handlePageLoad());
 window.addEventListener('popstate', () => handlePageLoad());

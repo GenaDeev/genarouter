@@ -1,23 +1,17 @@
-// Import the correspondig pages here
-import homepage from "../pages/homepage.js";
-import page2 from "../pages/page2.js";
-import page3 from "../pages/page3.js";
-
 export const settings = {
     // Add the routes you are going to use with your project and link them to a function that returns HTML
-    validRoutes : [
-        // Genarouter comes with some built-in basic pages
+    validRoutes: [
         {
             'pathname': '/',
-            'component': homepage
+            'component': () => import("../pages/homepage.js")
         },
         {
             'pathname': '/page2',
-            'component': page2
+            'component': () => import("../pages/page2.js")
         },
         {
             'pathname': '/page3',
-            'component': page3
+            'component': () => import("../pages/page3.js")
         },
     ],
 

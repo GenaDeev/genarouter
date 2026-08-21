@@ -275,7 +275,7 @@ location / {
 }
 ```
 
-# Developed by 2024 ©️ GenaDeev
+# Developed by 2024 ©️ gefydev
 ### All rights reserved
 
-![](https://raw.githubusercontent.com/GenaDeev/ComiDolar/main/public/assets/img/genadev-v-nobg-1.webp)
+![](https://raw.githubusercontent.com/gefydev/ComiDolar/main/public/assets/img/genadev-v-nobg-1.webp)
